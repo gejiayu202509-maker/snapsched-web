@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153d32">
+  <meta name="description" content="SnapSched turns one event poster into reviewed event details and an importable calendar file. An AILT9019 Team 2 project.">
+  <title>SnapSched — From poster to calendar</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="SnapSched home"><img src="assets/icon.svg" alt="" width="35" height="35">SnapSched<span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation"><a href="#workflow">How it works</a><a href="#evaluation">Evaluation</a><a href="#project">Project</a></nav>
+    <a class="header-link" href="https://github.com/Ding-07-cn/SnapSched" target="_blank" rel="noopener">Source code <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AILT9019 · TEAM 02</p>
+        <h1 id="hero-title">From a poster.<br>To your <em>plans.</em></h1>
+        <p class="lead">Capture the event.<br>Check the details. Keep the date.</p>
+        <p class="intro">SnapSched turns one event poster into editable event details and a calendar file. AI handles the first pass. You make the final call.</p>
+        <div class="hero-actions"><a class="button primary" href="#workflow">Explore the workflow <span aria-hidden="true">↓</span></a><a class="text-link" href="#run">Run the application <span aria-hidden="true">↗</span></a></div>
+        <p class="fine">Python + Streamlit · Gemini extraction · iCalendar export</p>
+      </div>
+      <div class="hero-art" aria-label="Illustrated synthetic example: an event poster becomes a reviewed calendar entry">
+        <div class="art-grid" aria-hidden="true"></div>
+        <span class="art-label">ONE IMAGE. A CLEARER PLAN.</span>
+        <button class="poster-card" data-open-poster aria-label="Open the full synthetic sample poster">
+          <span class="poster-top">CAMPUS NOTES <span>↗</span></span>
+          <span class="poster-kicker">A SYNTHETIC SAMPLE</span>
+          <span class="poster-title">Student<br>Research<br><em>Skills.</em></span>
+          <span class="poster-rule"></span>
+          <span class="poster-meta">05 DEC 2026<br>15:00 — 16:00 HKT<br>Demo Room 101</span>
+          <span class="poster-bottom">WORKSHOP <span>+</span></span>
+        </button>
+        <span class="transfer" aria-hidden="true">↘</span>
+        <div class="calendar-card">
+          <div class="calendar-top"><span class="check-icon" aria-hidden="true">✓</span> Reviewed event <span class="file-badge">.ics</span></div>
+          <div class="calendar-body"><div class="date-tile"><span>DEC</span><strong>05</strong><span>SATURDAY</span></div><div><h2>Student Research<br>Skills Workshop</h2><p>15:00–16:00 · Hong Kong</p><p>Demo Room 101</p></div></div>
+          <div class="calendar-footer"><span class="status-dot"></span> Confirm first. Export second.</div>
+        </div>
+        <p class="art-caption">Illustrated workflow · team-created example, not a real event</p>
+      </div>
+    </section>
+    <div class="principle"><div class="wrap"><span>Less retyping.</span><span>Source details in sight.</span><span>Human confirmation, always.</span></div></div>
+    <section class="section wrap" id="workflow" aria-labelledby="workflow-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / THE WORKFLOW</p><h2 id="workflow-title">Three steps.<br>One date worth keeping.</h2></div><p>Event details get lost between a poster and a calendar. SnapSched keeps the source, the review and the export in one focused workflow.</p></div>
+      <div class="steps">
+        <article><span class="step-number">01</span><h3>Bring the poster.</h3><p>Upload one clear JPG or PNG. Give consent before the image is sent to the external AI service for extraction.</p><span class="step-note">ONE POSTER AT A TIME</span></article>
+        <article><span class="step-number">02</span><h3>Make it accurate.</h3><p>Compare the draft with the poster. Edit the title, date, time, venue and registration details. Explicitly confirm your review.</p><span class="step-note">YOU APPROVE THE DETAILS</span></article>
+        <article><span class="step-number">03</span><h3>Keep the date.</h3><p>Download an .ics file and import it into your calendar. An eligible future registration deadline can become a separate entry.</p><span class="step-note">A FILE YOU CAN TAKE WITH YOU</span></article>
+      </div>
+    </section>
+    <section class="review-section" aria-labelledby="review-title"><div class="wrap review-layout">
+      <div class="review-copy"><p class="eyebrow">DESIGNED AROUND A CHECKPOINT</p><h2 id="review-title">AI drafts.<br><em>You decide.</em></h2><p>Reading a date is useful. Giving you a chance to catch a wrong date is essential.</p><ul class="review-list"><li>Missing dates block calendar export.</li><li>Unknown venues stay unknown.</li><li>Editing details clears earlier approval.</li><li>API failures produce a safe error, not a fabricated event.</li></ul><button class="text-link" data-open-poster>Inspect the synthetic sample poster <span aria-hidden="true">↗</span></button></div>
+      <figure class="screenshot-frame"><div class="window-strip"><i></i><i></i><i></i><span>SnapSched / actual application</span></div><img src="assets/calendar-export.png" width="630" height="984" loading="lazy" alt="Actual SnapSched interface showing a checked review acknowledgement, confirmed calendar export, and Download .ics button."><figcaption>Actual application screenshot · 25 Oct 2026<br>Historical synthetic fixture; separate from the illustration above.</figcaption></figure>
+    </div></section>
+    <section class="section wrap" id="evaluation" aria-labelledby="evaluation-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / EVIDENCE, WITH CONTEXT</p><h2 id="evaluation-title">Tested. And clear<br>about the limits.</h2></div><p>The recorded baseline uses 12 team-created synthetic posters. These results describe that small test set, not accuracy on arbitrary real-world posters.</p></div>
+      <div class="results"><article><strong>8<span>/8</span></strong><h3>Ordinary cases matched</h3><p>Expected event names, dates, start/end times and venues.</p></article><article><strong>11<span>/12</span></strong><h3>First-run cases matched</h3><p>One API-error case matched on a separate retry. The original failure is retained.</p></article><article><strong>79</strong><h3>Regression tests passed</h3><p>Application and integration checks; external model responses are mocked.</p></article><article><strong>55</strong><h3>Offline checks passed</h3><p>Extraction logic and response handling. These do not measure live AI accuracy.</p></article></div>
+      <div class="evidence-note"><span class="note-mark" aria-hidden="true">i</span><p><strong>Evidence recorded on 28 October 2026.</strong> Independent teammate review, the full planned calendar-client import matrix and hosted application verification remain unconfirmed. The earlier real workflow demonstration includes one Apple Calendar import.</p><a href="https://github.com/Ding-07-cn/SnapSched/blob/main/evaluation/results/README.md" target="_blank" rel="noopener">Read the evaluation record ↗</a></div>
+    </section>
+    <section class="section boundaries wrap" aria-labelledby="boundaries-title"><div><p class="eyebrow">A SMALL, DELIBERATE SCOPE</p><h2 id="boundaries-title">Useful boundaries.</h2><p class="boundary-intro">A calendar assistant should make uncertainty visible.</p></div><div class="accordions"><details open><summary>What happens when information is missing?</summary><p>A missing date blocks export. Unknown venues and times are not invented. You must decide whether an event is all-day; no printed end time means no guessed duration.</p></details><details><summary>What happens to registration details?</summary><p>Future registration deadlines can become separate calendar entries. Expired deadlines do not generate reminders. Creating a calendar entry does not register you for an event. QR codes require a manual check.</p></details><details><summary>Where does the image go?</summary><p>Live extraction sends a compressed image to the Gemini API. The app does not intentionally save uploads to its own database, but provider and hosting data policies still apply. Use public or synthetic posters. Clearing the session cannot erase downloaded files or provider records.</p></details><details><summary>What is outside the current scope?</summary><p>One event per image, single-day events and Hong Kong time. No calendar account access, automatic sync, mailbox scraping or automatic registration. Calendar import and alarm behaviour depend on the client.</p></details></div></section>
+    <section class="run-section" id="run" aria-labelledby="run-title"><div class="wrap run-layout"><div><p class="eyebrow">03 / EXPLORE THE PROJECT</p><h2 id="run-title">Take a closer look.</h2><p>Run the Streamlit application locally with Python 3.11 or 3.12. Live extraction needs a configured Gemini API key. A clearly labelled saved sample is available without a key.</p><a class="button light" href="https://github.com/Ding-07-cn/SnapSched" target="_blank" rel="noopener">Open the application repository <span aria-hidden="true">↗</span></a><p class="run-fine">The application repository requires authorised GitHub access.<br>This public page presents the project; image processing runs in the application.</p></div><div class="terminal"><div class="terminal-heading"><span>LOCAL SETUP</span><button id="copy-setup" type="button">Copy commands</button></div><pre><code id="setup-commands">git clone https://github.com/Ding-07-cn/SnapSched.git
+cd SnapSched
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m streamlit run app.py</code></pre><p>Windows: activate with .venv\Scripts\activate.<br>Add your key locally following the repository README.</p><p id="copy-status" role="status" aria-live="polite"></p></div></div></section>
+    <section class="project-section wrap" id="project" aria-labelledby="project-title"><div><p class="eyebrow">BUILT FOR AILT9019</p><h2 id="project-title">SnapSched / Team 02</h2><p>An AI Literacy II course project at the University of Hong Kong, focused on a practical, reviewable poster-to-calendar workflow. This student prototype is not affiliated with or endorsed by HKU.</p></div><div class="disclosure"><h3>AI-use disclosure</h3><p>The application uses Gemini for poster extraction. Codex assisted with implementation, integration, tests, documentation and this project webpage. Human review is required before calendar export. Tests using mocked responses are distinguished from live model evaluation.</p><p class="fine">Project page updated 12 November 2026.<br>For source, reproducibility and current implementation details, see the application README.</p></div></section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="#">SnapSched<span class="brand-dot">.</span></a><p>A clearer path from poster to plan.</p><a href="https://github.com/gejiayu202509-maker/snapsched-web" target="_blank" rel="noopener">Website source ↗</a></footer>
+  <dialog id="poster-dialog" aria-labelledby="poster-dialog-title"><div class="dialog-heading"><h2 id="poster-dialog-title">Synthetic sample poster</h2><button id="close-poster" type="button" aria-label="Close sample poster">✕</button></div><p>Team-created UI fixture. This is not a real event or live AI result.</p><img src="assets/sample-poster.png" alt="Synthetic Student Research Skills Workshop poster: 5 December 2026, 15:00–16:00 HKT, Demo Room 101; register by 3 December at 18:00."></dialog>
+</body>
+</html>
